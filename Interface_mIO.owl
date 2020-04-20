@@ -1,0 +1,734 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cenitmio.es/ontologies/Interface.owl#"
+     xml:base="http://www.cenitmio.es/ontologies/Interface.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Interface="http://www.cenitmio.es/ontologies/Interface.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.cenitmio.es/ontologies/Interface.owl">
+        <dc:title xml:lang="en">mIO! Interface Ontology</dc:title>
+        <rdfs:comment xml:lang="en">This work has been carried out by the Ontological Engineering Group,  supported by the mIO! project.</rdfs:comment>
+        <owl:versionInfo>3.0</owl:versionInfo>
+        <rdfs:comment xml:lang="es">Ontología mIO! sobre interfaces</rdfs:comment>
+        <dc:creator>Mari Carmen Suárez-Figueroa</dc:creator>
+        <dc:creator>María Poveda-Villalón</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#hasInputInterfaceType -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#hasInputInterfaceType">
+        <rdfs:subPropertyOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#hasInterfaceType"/>
+        <owl:inverseOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isInputTypeOfInterface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#hasInputModality -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#hasInputModality">
+        <rdfs:subPropertyOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#hasModality"/>
+        <owl:inverseOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isInputModalityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#hasInterfaceType -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#hasInterfaceType">
+        <owl:inverseOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isTypeOfInterface"/>
+        <rdfs:label xml:lang="en">has interface type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#hasModality -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#hasModality">
+        <owl:inverseOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isModalityOf"/>
+        <rdfs:label xml:lang="en">has modality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#hasOperationMode -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#hasOperationMode"/>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#hasOutputInterfaceType -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#hasOutputInterfaceType">
+        <rdfs:subPropertyOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#hasInterfaceType"/>
+        <owl:inverseOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isOutputTypeOfInterface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#hasOutputModality -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#hasOutputModality">
+        <rdfs:subPropertyOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#hasModality"/>
+        <owl:inverseOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isOutputModalityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#isCharacteristicOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#isCharacteristicOf">
+        <owl:inverseOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isInterfaceDefinedByCharacteristic"/>
+        <rdfs:label xml:lang="en">is characteristic of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#isInputModalityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#isInputModalityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isModalityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#isInputTypeOfInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#isInputTypeOfInterface">
+        <rdfs:subPropertyOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isTypeOfInterface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#isInterfaceDefinedByCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#isInterfaceDefinedByCharacteristic">
+        <rdfs:label xml:lang="en">is interface defined by characteristic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#isModalityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#isModalityOf">
+        <rdfs:label xml:lang="en">is modality of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#isOutputModalityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#isOutputModalityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isModalityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#isOutputTypeOfInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#isOutputTypeOfInterface">
+        <rdfs:subPropertyOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#isTypeOfInterface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#isTypeOfInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#isTypeOfInterface">
+        <rdfs:label xml:lang="en">is type of interface</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#AES3ConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#AES3ConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">AES3ConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#AccessNetworkInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#AccessNetworkInterface">
+        <rdfs:label xml:lang="en">AccessNetworkInterface</rdfs:label>
+        <rdfs:label xml:lang="es">Interfaz de acceso a redes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#AnalogMultichannelConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#AnalogMultichannelConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">AnalogMultichannelConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#AudioInterfaceModality -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#AudioInterfaceModality">
+        <rdfs:label xml:lang="en">Audio interface modality</rdfs:label>
+        <rdfs:label xml:lang="es">Modalidad de interfaz de audio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#BasicConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#BasicConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">BasicConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#BluetoothConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#BluetoothConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#WirelessConnectionInterface"/>
+        <rdfs:label xml:lang="en">BluetoothConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#CommandLineInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#CommandLineInterface">
+        <rdfs:label xml:lang="en">Command line interface</rdfs:label>
+        <rdfs:label xml:lang="es">Intefaz de línea de comandos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#ComponentVideoConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#ComponentVideoConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">ComponentVideoConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#CompositeVideoConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#CompositeVideoConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">CompositeVideoConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface">
+        <rdfs:label xml:lang="en">ConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#ControlInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#ControlInterface">
+        <rdfs:label xml:lang="en">ControlInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#ConversationalInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#ConversationalInterface">
+        <rdfs:label xml:lang="en">Conversational interface</rdfs:label>
+        <rdfs:label xml:lang="es">Interfaz conversacional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#DVIConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#DVIConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">DVIConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#DisplayPortConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#DisplayPortConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">DisplayPortConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#FireWireConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#FireWireConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">FireWireConnectionInterface</rdfs:label>
+        <rdfs:label>IEEE 1394</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#GesturalInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#GesturalInterface">
+        <rdfs:label xml:lang="en">Gestural interface</rdfs:label>
+        <rdfs:label xml:lang="es">Interfaz gestual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#GraphicInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#GraphicInterface">
+        <rdfs:label xml:lang="en">Graphic interface</rdfs:label>
+        <rdfs:label xml:lang="es">Interfaz gráfica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#GraphicInterfaceModality -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#GraphicInterfaceModality">
+        <rdfs:label xml:lang="en">Graphic interface modality</rdfs:label>
+        <rdfs:label xml:lang="es">Modalidad de interfaz gráfica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#HDMIConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#HDMIConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">HDMIConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#InfraredConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#InfraredConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#WirelessConnectionInterface"/>
+        <rdfs:label xml:lang="en">InfraredConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#MicConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#MicConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">MicConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#MixedInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#MixedInterface">
+        <rdfs:comment xml:lang="en">A mixed interface is a interface that have al least two interface types.</rdfs:comment>
+        <rdfs:label xml:lang="es">Interfaz mixta</rdfs:label>
+        <rdfs:label xml:lang="en">Mixed interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#MultiScreenInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#MultiScreenInterface">
+        <rdfs:label xml:lang="es">Interfaz multipantalla</rdfs:label>
+        <rdfs:label xml:lang="en">Multi screen interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#NaturalLanguageInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#NaturalLanguageInterface">
+        <rdfs:label xml:lang="es">Interfaz de lenguaje natural</rdfs:label>
+        <rdfs:label xml:lang="en">Natural language interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#PS2ConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#PS2ConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">PS2ConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#ParallelPortConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#ParallelPortConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">IEEE 1284</rdfs:label>
+        <rdfs:label xml:lang="en">ParallelPortConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#RCAConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#RCAConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">RCAConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#RFConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#RFConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">RFConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#Resolution -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#Resolution">
+        <rdfs:label xml:lang="es">Resolución</rdfs:label>
+        <rdfs:label xml:lang="en">Resolution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#SPDIFConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#SPDIFConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">SPDIFConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#SVideoConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#SVideoConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">SVideoConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#SerialPortConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#SerialPortConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label>RS232</rdfs:label>
+        <rdfs:label xml:lang="en">SerialPortConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#TextualInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#TextualInterface">
+        <rdfs:label xml:lang="es">Interfaz textual</rdfs:label>
+        <rdfs:label xml:lang="en">Textual interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#TextualInterfaceModality -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#TextualInterfaceModality">
+        <rdfs:label xml:lang="es">Modalidad de interfaz textual</rdfs:label>
+        <rdfs:label xml:lang="en">Textual interface modality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#ToslinkConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#ToslinkConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">ToslinkConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#TouchInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#TouchInterface">
+        <rdfs:label xml:lang="es">Interfaz táctil</rdfs:label>
+        <rdfs:label xml:lang="en">Touch interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#USBConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#USBConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">USBConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#VGAConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#VGAConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">VGAConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#VisualConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#VisualConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">VisualConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#VisualInterfaceModality -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#VisualInterfaceModality">
+        <rdfs:label xml:lang="es">Modalidad de interfaz de visión</rdfs:label>
+        <rdfs:label xml:lang="en">Visual interface modality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#VisualizationInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#VisualizationInterface">
+        <rdfs:label xml:lang="en">VisualizationInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#VocalInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#VocalInterface">
+        <rdfs:label xml:lang="es">Interfaz vocal</rdfs:label>
+        <rdfs:label xml:lang="en">Vocal interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#WHDIConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#WHDIConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">WHDIConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#WebInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#WebInterface">
+        <rdfs:label xml:lang="es">Interfaz web</rdfs:label>
+        <rdfs:label xml:lang="en">Web interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#WiFiConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#WiFiConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#WirelessConnectionInterface"/>
+        <rdfs:label xml:lang="en">WiFiConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#WirelessConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#WirelessConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">WirelessConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#WirelessHDConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#WirelessHDConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#WirelessConnectionInterface"/>
+        <rdfs:label xml:lang="en">WirelessHDConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#WirelessUSBConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#WirelessUSBConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#WirelessConnectionInterface"/>
+        <rdfs:label xml:lang="en">WirelessUSBConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#ZigbeeConnectionInterface -->
+
+    <owl:Class rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#ZigbeeConnectionInterface">
+        <rdfs:subClassOf rdf:resource="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+        <rdfs:label xml:lang="en">ZigbeeConnectionInterface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#commandLineInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#commandLineInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#conversationalInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#conversationalInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#gesturalInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#gesturalInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#graphicInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#graphicInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#multiScreenInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#multiScreenInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#naturalLanguageInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#naturalLanguageInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#textualInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#textualInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#touchInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#touchInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#vocalInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#vocalInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.cenitmio.es/ontologies/Interface.owl#webInterfaceType -->
+
+    <owl:Thing rdf:about="http://www.cenitmio.es/ontologies/Interface.owl#webInterfaceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
