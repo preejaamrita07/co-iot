@@ -1,16 +1,21 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/co-iot/"
+     xml:base="http://www.semanticweb.org/co-iot/Place"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/co-iot/">
+     ontologyIRI="http://www.semanticweb.org/co-iot/Place">
+    <Prefix name="" IRI="http://www.semanticweb.org/co-iot/Place#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Place ontology</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#FireStation"/>
     </Declaration>
@@ -24,10 +29,10 @@
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Supermarket"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Pharmacy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Pharmacy"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Supermarket"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
@@ -93,16 +98,16 @@
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#FastFood"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#ParkingPlace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Airport"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#EducationalInstitute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Airport"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
@@ -234,6 +239,36 @@
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#TollGate"/>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
     </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/co-iot#Place</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Characterize the place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vocabularies of Amenity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Characterize building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vocabularies of infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Characterize natiural place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PlaceProfile</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Profile of place</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
