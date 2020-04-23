@@ -51,10 +51,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Watt"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Latency"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Latency"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Pedometer"/>
@@ -72,13 +72,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MinuteTime"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Microphone"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SpeedSensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#TemperatureSensor"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#CommunicationType"/>
@@ -102,13 +96,22 @@
         <Class IRI="#Smog"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#MACBookAir"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Centimetre"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Projector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Headphone"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#GesturalInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoD"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#OpticalDustSensor"/>
@@ -135,10 +138,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SoilHumiditySensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Faculty"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#LocationSensor"/>
+        <Class IRI="#AttendanceSheet"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Colleague"/>
@@ -147,10 +147,22 @@
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasRelation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
+        <NamedIndividual IRI="#BlueStar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PresentationEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PowerPlugSocket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProximitySensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#APP-TYP-ID"/>
@@ -165,13 +177,10 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#BirthStar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#MemoryCard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Laboratory"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Lumen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MACBookAir"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MilligramPerLitre"/>
@@ -184,9 +193,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ReactivePower"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#HoD"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MotionStateVehicle"/>
@@ -210,22 +216,16 @@
         <NamedIndividual IRI="#ACT-LN-001"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DistanceNextBus"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WorkingStateDriver1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#BlueStar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#AttendanceSheet"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ClassProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocationSensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TrafficIntensity"/>
@@ -244,6 +244,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemoryCard"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#SmartOffice"/>
@@ -267,6 +270,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Dimensionless"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#inDeployment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Qualification"/>
     </Declaration>
     <Declaration>
@@ -286,9 +292,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#duration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#HumiditySensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Inch"/>
@@ -312,6 +315,9 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Gender"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Faculty"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Mobile"/>
     </Declaration>
     <Declaration>
@@ -330,6 +336,12 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Presence"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Microphone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Webpage"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#HighSchool"/>
     </Declaration>
     <Declaration>
@@ -342,13 +354,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#PresenceStateDriverCard2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Projector"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VoiceCommandSensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#EthernetJack"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Sound"/>
@@ -360,10 +366,10 @@
         <ObjectProperty IRI="#hasTime"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Millivolt"/>
+        <Class IRI="#Module"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Redmi5"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Millivolt"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Secure"/>
@@ -372,10 +378,10 @@
         <ObjectProperty IRI="#hasPosture"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricPotential"/>
+        <Class IRI="#HoDRoom"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/co-iot#Activity_DataProperties"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricPotential"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#BloodGroup"/>
@@ -384,13 +390,7 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#SugarLevel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#HoDRoom"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VOCSensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#LightSensor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasQuantity"/>
@@ -414,16 +414,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Bar"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Redmi5"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasMetadata"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Visibility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Capacitance"/>
+        <Class IRI="#Brightness"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Brightness"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Capacitance"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Telephone"/>
@@ -438,7 +441,13 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#SmartClassroom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#EthernetJack"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Sibling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WiFiRouter"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isAssociatedWith"/>
@@ -480,13 +489,7 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#WebInterface"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DeltaDewPoint"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Mouse"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasUID"/>
@@ -513,6 +516,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AccInitialERabSetupSuccRate"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#associatedWith"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#ConversationalInterface"/>
     </Declaration>
     <Declaration>
@@ -520,9 +526,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Animation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#StudentRole"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Height"/>
@@ -534,7 +537,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Precipitation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Strategy"/>
+        <Class IRI="#OutputDevice"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Kilogram"/>
@@ -558,13 +561,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Lux"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Light"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Invalid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#ProximitySensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TemperatureWasteContainer"/>
@@ -588,13 +585,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Microampere"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Simulation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Metre"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Attribute"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#CourseCode"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TransportDevice"/>
@@ -613,9 +610,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RoomTemperature"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#PresentationEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#NetworkService"/>
@@ -642,9 +636,6 @@
         <DataProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Camera"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasState"/>
     </Declaration>
     <Declaration>
@@ -654,22 +645,28 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Percent"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Router"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ECG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndoorSpace"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MeasurementType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#startTime"/>
+        <Class IRI="#TemperatureSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Source"/>
+        <ObjectProperty IRI="#startTime"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Crowd"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#StaffRoom"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Source"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Energy"/>
@@ -678,7 +675,7 @@
         <Class IRI="#Time"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Headphone"/>
+        <Class IRI="#Webplatform"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricFieldSensor"/>
@@ -687,13 +684,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Cupboard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Webplatform"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SaltMeter"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DecibelMilliwatt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SkinConductance"/>
@@ -708,9 +705,6 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DishWasher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Student"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#State"/>
     </Declaration>
     <Declaration>
@@ -723,6 +717,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AccRrcConnSetupSuccRate"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Humidity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Calibration"/>
     </Declaration>
     <Declaration>
@@ -732,16 +729,7 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Range"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#EthernetCable"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#L101"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Policy"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ThrottleSensor"/>
@@ -780,7 +768,7 @@
         <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#ActuatingDevice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#RemotePanel"/>
+        <Class IRI="#Classroom"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ACT-TH-001"/>
@@ -795,13 +783,16 @@
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Precision"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LivingEntity"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#PPM"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LivingEntity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MedicalEmergencyEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseName"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BuildingTemperature"/>
@@ -819,22 +810,13 @@
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PlaceProfile"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#CourseName"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#ClassEvent"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Provider"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#MarkSheet"/>
+        <NamedIndividual IRI="#Wireless_Sensor_Network"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DeltaDewPointSensor"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Wireless_Sensor_Network"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MileageDistanceToService"/>
@@ -909,19 +891,25 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Hub"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SoftwareTool"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricalResistance"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#GasDetector"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#GyroscopeSensor"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SecondTime"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#GyroscopeSensor"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hastime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudentRole"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#PeopleStayDurationSensor"/>
@@ -939,19 +927,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Conductivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#TechnicalStaff"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Sodium"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#NetworkSwitch"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#PhysicalFeature"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#OutdoorSpace"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DustSensor"/>
@@ -987,6 +966,9 @@
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LearningEvent"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Avalanche"/>
     </Declaration>
     <Declaration>
@@ -999,6 +981,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricField"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Smoke"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Underwater"/>
     </Declaration>
     <Declaration>
@@ -1008,13 +993,13 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Official"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Smoke"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VoiceCommandController"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BeatPerMinute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutdoorSpace"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataValue"/>
@@ -1027,6 +1012,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Rectangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkSwitch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechnicalStaff"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Microwave"/>
@@ -1044,7 +1038,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#CountPeopleMoving"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Monitor"/>
+        <DataProperty IRI="#Activity_DataProperties"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#PresenceStateDriverCard1"/>
@@ -1068,13 +1062,16 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#CommandLineInterface"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Module"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VehiclePresenceDetector"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C101"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#CurrentSensor"/>
@@ -1098,19 +1095,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DistanceSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Terminate"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#Resolution"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#WiFiRouter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Keyboard"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Weather"/>
@@ -1120,9 +1108,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#HandsonEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Year"/>
@@ -1141,6 +1126,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Calcium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouse"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#EnergyMeter"/>
@@ -1165,6 +1153,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FoodTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FireDetector"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Wout"/>
@@ -1236,9 +1227,6 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WiFiInterfaceEnergyMeter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#AmbientLight"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ENT-TYP-ID"/>
     </Declaration>
     <Declaration>
@@ -1252,6 +1240,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SolarRadiationSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimulationEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaffRoom"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNH3"/>
@@ -1275,16 +1269,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#HDOP"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#Location_Properties"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricField1800MHz"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Nexus3"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#SpeedMedian"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#SpeedMedian"/>
+        <Class IRI="#Camera"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:source"/>
@@ -1326,9 +1317,6 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SiemensPerMetre"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Simulation"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Candela"/>
     </Declaration>
     <Declaration>
@@ -1342,6 +1330,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Magnetometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Printer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AirProfile"/>
@@ -1362,9 +1353,6 @@
         <Class IRI="#Laptop"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#iPad"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Mass"/>
     </Declaration>
     <Declaration>
@@ -1372,9 +1360,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WeightSensor"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Send_and_Receive"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AccS1SigEstabSuccRate"/>
@@ -1425,19 +1410,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BoardThermometer"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#A101"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Father"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TimeRelatedStateDriver2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#CourseMaterial"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Profile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#FireEmergencyEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#GraphicInterface"/>
@@ -1452,6 +1434,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BloodGlucose"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DiskDrive"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AccInitialERabEstabSuccRate"/>
     </Declaration>
     <Declaration>
@@ -1464,19 +1449,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#CO2Sensor"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Mineral"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Graduation"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentJoiningDate"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Graduation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/sensor#Engine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InputDevice"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WindSpeed"/>
@@ -1485,13 +1470,16 @@
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasReference"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#WN624"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationOutput"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#WindSpeedSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#WindSpeedSensor"/>
+        <Class IRI="#CO2Sensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Milligram"/>
@@ -1542,13 +1530,22 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MicrogramPerCubicMetre"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ConferenceRoom"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MileageTotal"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#DeathTime"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FireEmergencyEvent"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#IEEE802154InterfaceEnergyMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseMaterial"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
@@ -1563,12 +1560,6 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WaterConductivitySensor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#WN624"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Gyroscope"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Radian"/>
     </Declaration>
     <Declaration>
@@ -1581,13 +1572,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Power"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Assignment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SoundPressureLevelAmbient"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#LoRaInterface"/>
+        <Class IRI="#Gyroscope"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#OccupancySensor"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#LoRaInterface"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#NO2Sensor"/>
@@ -1599,16 +1593,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RSSI"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ExamEvent"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CommunicationService"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Assignment"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#ImageScanner"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
+        <Class IRI="#ImageScanner"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
@@ -1629,7 +1620,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Tesla"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#ConferenceRoom"/>
+        <NamedIndividual IRI="#Faculty"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Ohm"/>
@@ -1638,7 +1629,7 @@
         <NamedIndividual IRI="#EVT-CL-001"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
+        <Class IRI="#OccupancySensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Culture"/>
@@ -1662,9 +1653,6 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Spouse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#ComputerSpeaker"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WindDirection"/>
     </Declaration>
     <Declaration>
@@ -1674,13 +1662,13 @@
         <NamedIndividual IRI="#Jill"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ShakeSensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MobHoPrepSuccRate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#DemoEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Neighbor"/>
@@ -1701,9 +1689,6 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AtmosphericPressure"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Faculty"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FuelConsumptionInstantaneous"/>
     </Declaration>
     <Declaration>
@@ -1711,9 +1696,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#WeddingPlace"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#DiskDrive"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Microvolt"/>
@@ -1734,6 +1716,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DegreeAngle"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Powerpoint"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Emotion"/>
     </Declaration>
     <Declaration>
@@ -1743,13 +1728,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MillimetrePerHour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#PresenceStateDriverCard"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MethaneSensor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#N101"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#PresenceStateDriverCard"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#EmailID"/>
@@ -1758,31 +1740,31 @@
         <ObjectProperty IRI="#hasNetworkPrivateDomain"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Keyboard"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DegreeFahrenheit"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#BloodPressure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Parent"/>
+        <Class IRI="#Parent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Location"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Powerpoint"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Count"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#FireDetector"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Name"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Window"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USBFlashdrive"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#HumiditySensor"/>
@@ -1795,6 +1777,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#endTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParentRole"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#CloudCover"/>
@@ -1818,7 +1803,13 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#PersonProfile"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Nexus3"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerSpeaker"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#OfficialEmailID"/>
@@ -1842,10 +1833,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ConstructionWork"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#LearningEvent"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#WeddingDate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#WeddingDate"/>
+        <Class IRI="#I/ODevice"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Animals"/>
@@ -1875,7 +1866,13 @@
         <Class IRI="#Soil"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HandsonEvent"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DirectionAzimuth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Send_and_Receive"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Goal"/>
@@ -1887,10 +1884,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Coordinates"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#associatedSubgoal"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DecibelA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Webcam"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Transportation"/>
@@ -1917,7 +1920,10 @@
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishes"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Printer"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iPad"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ABS"/>
@@ -1941,6 +1947,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MetrePerSecondSquare"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Coverage"/>
     </Declaration>
     <Declaration>
@@ -1959,6 +1968,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TimeOfArrivalNextBus"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#GramPerLitre"/>
     </Declaration>
     <Declaration>
@@ -1969,9 +1981,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VisibilitySensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#QuestionPaper"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#GramPerCubicMetre"/>
@@ -2007,13 +2016,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SoilThermometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#SimulationEvent"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FillLevelWasteContainer"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#CholesterolSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmbientLight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemotePanel"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Pound"/>
@@ -2025,25 +2037,22 @@
         <Class IRI="#Environment"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#Location_Properties"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Suspend"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BodyTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#LectureDeliveryEvent"/>
+        <Class IRI="#LectureDeliveryEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Network"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SoilTemperature"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Audio"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Humidity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PlantProfile"/>
@@ -2061,6 +2070,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RoadSurfaceThermometer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#EthernetCable"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#OxygenSensor"/>
     </Declaration>
     <Declaration>
@@ -2070,6 +2082,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DiastolicBloodPressure"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Monitor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ProximitySensor"/>
     </Declaration>
     <Declaration>
@@ -2077,6 +2092,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Okta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Questionnaire"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricField2100MHz"/>
@@ -2100,10 +2118,10 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#School"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#BloodPressureSensor"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#StayingPeopleCountSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#StayingPeopleCountSensor"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#BloodPressureSensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
@@ -2115,7 +2133,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FuelConsumption"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Questionnaire"/>
+        <Class IRI="#MarkSheet"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ClassEvent"/>
@@ -2140,9 +2158,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasColleague"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Classroom"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
@@ -2218,9 +2233,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#EventProfile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#SoftwareTool"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DoorStateSensor"/>
@@ -2307,6 +2319,12 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WaterThermometer"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#L101"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audio"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Modem"/>
     </Declaration>
     <Declaration>
@@ -2322,9 +2340,6 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Medical"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Vehicle"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Healthcare"/>
     </Declaration>
     <Declaration>
@@ -2337,7 +2352,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#PHSensor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#N101"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightSensor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasEngine"/>
@@ -2376,10 +2397,10 @@
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#C101"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Citizenship"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Citizenship"/>
+        <Class IRI="#Document"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricField900Mhz"/>
@@ -2389,9 +2410,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#DeploymentProfile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Webpage"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Direction"/>
@@ -2427,16 +2445,16 @@
         <Class IRI="#ElectricSwitchboard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Video"/>
+        <Class IRI="#HumiditySensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Event"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#PushService"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#PushService"/>
+        <Class IRI="#Event"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RadiationParticleDetector"/>
@@ -2451,6 +2469,9 @@
         <Class IRI="#DeviceProfile"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DemoEvent"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CompService"/>
     </Declaration>
     <Declaration>
@@ -2463,9 +2484,6 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#AccessNetworkInterface"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#ParentRole"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Decibel"/>
     </Declaration>
     <Declaration>
@@ -2473,9 +2491,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#NH3Sensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#USBFlashdrive"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SmartEnergy"/>
@@ -2502,10 +2517,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RFID"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#WeatherLuminosity"/>
+        <Class IRI="#Light"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#WeatherLuminosity"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#SoftwareService"/>
@@ -2529,9 +2544,6 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Others"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Webcam"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MmolPerLitre"/>
     </Declaration>
     <Declaration>
@@ -2539,6 +2551,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strategy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ENT-AMB-005"/>
@@ -2553,19 +2568,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Frequency"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Resolution"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#LoRaInterfaceEnergyMeter"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#DeathPlace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#IntDlLatency"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Resolution"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Thermometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#IntDlLatency"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MicrowattPerSquareCentimetre"/>
@@ -2577,13 +2592,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WaterTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Router"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#DewPoint"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DewPointTemperature"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#DewPoint"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BuildingAutomation"/>
@@ -2599,9 +2611,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#MedicalEmergencyProfile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#GraphicInterfaceModality"/>
@@ -2640,6 +2649,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SeatBeltTensionSensor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#QuestionPaper"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AngularSpeed"/>
     </Declaration>
     <Declaration>
@@ -2649,11 +2661,27 @@
         <Class IRI="#Subgoal"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#A101"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
         <Class IRI="#SensingDevice"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Structure"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#BirthTime"/>
@@ -2662,10 +2690,6 @@
     <EquivalentClasses>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Colleague"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentColleague"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
-        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#ActuatingDevice"/>
@@ -2753,6 +2777,20 @@
         <Class IRI="#CompEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Deployment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Deployment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
         <Class IRI="#CompEntity"/>
     </SubClassOf>
@@ -2790,6 +2828,20 @@
     <SubClassOf>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
         <Class IRI="#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#attachedSystem"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#inDeployment"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Deployment"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Precision"/>
@@ -2831,6 +2883,34 @@
     <SubClassOf>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
         <Class IRI="#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Deployment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.org/NET/ssnx/qu/qu#QuantityKind"/>
@@ -5519,7 +5599,7 @@
     <SubClassOf>
         <Class IRI="#Activity"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
+            <ObjectProperty IRI="#associatedWith"/>
             <Class IRI="#Entity"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -5543,6 +5623,10 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AmbientLight"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Animal"/>
         <Class IRI="#LivingEntity"/>
     </SubClassOf>
@@ -5551,12 +5635,36 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Assignment"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttendanceSheet"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audio"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Brightness"/>
         <Class IRI="#Environment"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CO2Sensor"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CPU"/>
         <Class IRI="#ElecronicDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camera"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassEvent"/>
+        <Class IRI="#ClassProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ClassEvent"/>
@@ -5567,12 +5675,40 @@
         <Class IRI="#EventProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Classroom"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CompEntity"/>
         <Class IRI="#Entity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CompService"/>
         <Class IRI="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerSpeaker"/>
+        <Class IRI="#OutputDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConferenceRoom"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Course"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseCode"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseMaterial"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseName"/>
+        <Class IRI="#Course"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CropProfille"/>
@@ -5583,12 +5719,24 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#PersonProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DemoEvent"/>
+        <Class IRI="#ClassProfile"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DeploymentProfile"/>
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DeviceProfile"/>
         <Class IRI="#EntityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiskDrive"/>
+        <Class IRI="#I/ODevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Document"/>
+        <Class IRI="#VirtualEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ENT-TYP-ID"/>
@@ -5652,6 +5800,14 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EthernetCable"/>
+        <Class IRI="#NetworkingDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetJack"/>
+        <Class IRI="#NetworkingDevice"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Event"/>
         <ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
@@ -5683,7 +5839,7 @@
     <SubClassOf>
         <Class IRI="#Event"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
+            <ObjectProperty IRI="#associatedWith"/>
             <Class IRI="#Activity"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -5692,8 +5848,24 @@
         <Class IRI="#Profile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ExamEvent"/>
+        <Class IRI="#ClassProfile"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#External"/>
         <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Faculty"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FireDetector"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FireEmergencyEvent"/>
+        <Class IRI="#MedicalEmergencyProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Goal"/>
@@ -5701,6 +5873,46 @@
             <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#associatedSubgoal"/>
             <Class IRI="#Subgoal"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gyroscope"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HandsonEvent"/>
+        <Class IRI="#ClassProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Headphone"/>
+        <Class IRI="#OutputDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoD"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoDRoom"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Humidity"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumiditySensor"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageScanner"/>
+        <Class IRI="#InputDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndoorSpace"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InputDevice"/>
+        <Class IRI="#PeripheralDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Interface"/>
@@ -5715,12 +5927,44 @@
         <Class IRI="#Activity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Keyboard"/>
+        <Class IRI="#InputDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Laptop"/>
         <Class IRI="#ElecronicDevice"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LearningEvent"/>
+        <Class IRI="#ClassProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LectureDeliveryEvent"/>
+        <Class IRI="#ClassProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Light"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightSensor"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LivingEntity"/>
         <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LocationSensor"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarkSheet"/>
+        <Class IRI="#Document"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MedicalEmergencyEvent"/>
@@ -5731,12 +5975,32 @@
         <Class IRI="#EventProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MemoryCard"/>
+        <Class IRI="#I/ODevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microphone"/>
+        <Class IRI="#InputDevice"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Mineral"/>
         <Class IRI="#NaturalResource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MineralProfile"/>
         <Class IRI="#EntityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Module"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monitor"/>
+        <Class IRI="#OutputDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouse"/>
+        <Class IRI="#InputDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NaturalResource"/>
@@ -5751,6 +6015,10 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NetworkSwitch"/>
+        <Class IRI="#NetworkingDevice"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NetworkingDevice"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
     </SubClassOf>
@@ -5763,6 +6031,18 @@
         <Class IRI="#Entity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#OccupancySensor"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutdoorSpace"/>
+        <Class IRI="#Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutputDevice"/>
+        <Class IRI="#PeripheralDevice"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Oven"/>
         <Class IRI="#ElecronicDevice"/>
     </SubClassOf>
@@ -5772,6 +6052,14 @@
             <ObjectProperty IRI="http://purl.org/iot/vocab/m3-lite#hasDomainOfInterest"/>
             <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#SmartHome"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParentRole"/>
+        <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PeripheralDevice"/>
@@ -5809,6 +6097,10 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Policy"/>
+        <Class IRI="#VirtualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PowerPlug"/>
         <Class IRI="#ElectricalEquipment"/>
     </SubClassOf>
@@ -5817,8 +6109,24 @@
         <Class IRI="#ElectricalEquipment"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Powerpoint"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Preference"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#PersonProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PresentationEvent"/>
+        <Class IRI="#ClassProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Printer"/>
+        <Class IRI="#OutputDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Projector"/>
+        <Class IRI="#OutputDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Provider"/>
@@ -5829,6 +6137,18 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ProximitySensor"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuestionPaper"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Questionnaire"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#REL-TYP-ID"/>
         <Class IRI="#UID"/>
     </SubClassOf>
@@ -5837,8 +6157,16 @@
         <Class IRI="#ElecronicDevice"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RemotePanel"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Role"/>
         <Class IRI="#VirtualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Router"/>
+        <Class IRI="#NetworkingDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Secure"/>
@@ -5853,11 +6181,23 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Simulation"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimulationEvent"/>
+        <Class IRI="#ClassProfile"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Smartphone"/>
         <Class IRI="#ElecronicDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Smog"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smoke"/>
         <Class IRI="#Environment"/>
     </SubClassOf>
     <SubClassOf>
@@ -5869,6 +6209,10 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SoftwareTool"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Soil"/>
         <Class IRI="#NaturalResource"/>
     </SubClassOf>
@@ -5877,11 +6221,31 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#StaffRoom"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#State"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasTime"/>
             <Class IRI="#Time"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strategy"/>
+        <Class IRI="#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure"/>
+        <Class IRI="#NonlivingEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudentRole"/>
+        <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Subgoal"/>
@@ -5900,8 +6264,16 @@
         <Class IRI="#ElecronicDevice"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TechnicalStaff"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Television"/>
         <Class IRI="#ElecronicDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureSensor"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Terminate"/>
@@ -5916,8 +6288,20 @@
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#USBFlashdrive"/>
+        <Class IRI="#I/ODevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#TransportDevice"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#VehicleProfile"/>
         <Class IRI="#EntityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VirtualEntity"/>
@@ -5930,6 +6314,22 @@
     <SubClassOf>
         <Class IRI="#Weather"/>
         <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Webcam"/>
+        <Class IRI="#InputDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Webpage"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Webplatform"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#I/ODevice"/>
+        <Class IRI="#PeripheralDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Age"/>
@@ -6283,7 +6683,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#VehicleType"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Vehicle"/>
+        <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#WashingMachine"/>
@@ -6310,336 +6710,140 @@
         <Class IRI="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#AmbientLight"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Airport"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Assignment"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
+        <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#AttendanceSheet"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Bank"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Audio"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#BusStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#CO2Sensor"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#BusStop"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#BusStation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Camera"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Convenience"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#ClassEvent"/>
-        <Class IRI="#ClassProfile"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#EducationalInstitute"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Classroom"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#FastFood"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Restaurant"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#ComputerSpeaker"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#FireStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#ConferenceRoom"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Forest"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#GasStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#CourseCode"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Hospital"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#CourseMaterial"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
+        <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#CourseName"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Lake"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#DemoEvent"/>
-        <Class IRI="#ClassProfile"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Leisure"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#DiskDrive"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#MetroStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
-        <Class IRI="#VirtualEntity"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace"/>
+        <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#EthernetCable"/>
-        <Class IRI="#NetworkingDevice"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Park"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Leisure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#EthernetJack"/>
-        <Class IRI="#NetworkingDevice"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#ParkingPlace"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
-        <Class IRI="#ClassProfile"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Faculty"/>
-        <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#FireDetector"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#FireEmergencyEvent"/>
-        <Class IRI="#MedicalEmergencyProfile"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Gyroscope"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#HandsonEvent"/>
-        <Class IRI="#ClassProfile"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Headphone"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#HoD"/>
-        <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#HoDRoom"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Humidity"/>
-        <Class IRI="#Environment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#HumiditySensor"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#ImageScanner"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
-        <Class IRI="#PeripheralDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Keyboard"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Laboratory"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#LearningEvent"/>
-        <Class IRI="#ClassProfile"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#LectureDeliveryEvent"/>
-        <Class IRI="#ClassProfile"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Light"/>
-        <Class IRI="#Environment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#LightSensor"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#LocationSensor"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#MarkSheet"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#MemoryCard"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Microphone"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Module"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Monitor"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Mouse"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#NetworkSwitch"/>
-        <Class IRI="#NetworkingDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#OccupancySensor"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#OutdoorSpace"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
-        <Class IRI="#PeripheralDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Parent"/>
-        <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#ParentRole"/>
-        <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Policy"/>
-        <Class IRI="#VirtualEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Powerpoint"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#PresentationEvent"/>
-        <Class IRI="#ClassProfile"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Printer"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Projector"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#ProximitySensor"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#QuestionPaper"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Questionnaire"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#RemotePanel"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Router"/>
-        <Class IRI="#NetworkingDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Simulation"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#SimulationEvent"/>
-        <Class IRI="#ClassProfile"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Smoke"/>
-        <Class IRI="#Environment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#SoftwareTool"/>
-        <Class IRI="#Software"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#StaffRoom"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Strategy"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Policy"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
-        <Class IRI="#NonlivingEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Student"/>
-        <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#StudentRole"/>
-        <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#TechnicalStaff"/>
-        <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#TemperatureSensor"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#USBFlashdrive"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Vehicle"/>
-        <Class IRI="#TransportDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Video"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Webcam"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Webpage"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#Webplatform"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
-        <Class IRI="#PeripheralDevice"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Pharmacy"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PlaceProfile"/>
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PoliceStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PostOffice"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#RailwayStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Restaurant"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#River"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#SportsCentre"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Leisure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Supermarket"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#TollGate"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/sensor#Engine"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Vehicle"/>
+        <Class IRI="#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
         <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class IRI="#Time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2006/time#TRS"/>
@@ -6647,6 +6851,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2006/time#TemporalDuration"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
         <Class IRI="#Time"/>
     </SubClassOf>
     <SubClassOf>
@@ -6689,11 +6897,11 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Pressure"/>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Proximity"/>
         <Class IRI="#Brightness"/>
+        <Class IRI="#Humidity"/>
+        <Class IRI="#Light"/>
         <Class IRI="#NoiseLevel"/>
         <Class IRI="#Smog"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Humidity"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Light"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Smoke"/>
+        <Class IRI="#Smoke"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#ACT-TYP-ID"/>
@@ -6707,52 +6915,60 @@
         <Class IRI="#Terminate"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Assignment"/>
+        <Class IRI="#AttendanceSheet"/>
+        <Class IRI="#CourseMaterial"/>
+        <Class IRI="#MarkSheet"/>
+        <Class IRI="#QuestionPaper"/>
+        <Class IRI="#Questionnaire"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DemoEvent"/>
+        <Class IRI="#ExamEvent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiskDrive"/>
+        <Class IRI="#MemoryCard"/>
+        <Class IRI="#USBFlashdrive"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExamEvent"/>
+        <Class IRI="#LectureDeliveryEvent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExamEvent"/>
+        <Class IRI="#PresentationEvent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExamEvent"/>
+        <Class IRI="#SimulationEvent"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Plant"/>
         <Class IRI="#VirtualEntity"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#RemotePanel"/>
+        <Class IRI="#Simulation"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Animation"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#RemotePanel"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Simulation"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Simulation"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Animation"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Simulation"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#FirstName"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#LastName"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MiddleName"/>
     </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/co-iot#Assignment"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#AttendanceSheet"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#CourseMaterial"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#MarkSheet"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#QuestionPaper"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#Questionnaire"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/co-iot#DemoEvent"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/co-iot#DiskDrive"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#MemoryCard"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#USBFlashdrive"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#LectureDeliveryEvent"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#PresentationEvent"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
-        <Class IRI="http://www.semanticweb.org/co-iot#SimulationEvent"/>
-    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#StaffRoom"/>
+        <NamedIndividual IRI="#A101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Structure"/>
+        <NamedIndividual IRI="#A101"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ACT-TYP-ID"/>
         <NamedIndividual IRI="#ACT-LN-001"/>
@@ -6792,6 +7008,14 @@
     <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Alex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirConditioner"/>
+        <NamedIndividual IRI="#BlueStar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConferenceRoom"/>
+        <NamedIndividual IRI="#C101"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ENT-TYP-ID"/>
@@ -6838,64 +7062,48 @@
         <NamedIndividual IRI="#Jill"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Laboratory"/>
+        <NamedIndividual IRI="#L101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#MACBookAir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Classroom"/>
+        <NamedIndividual IRI="#N101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tablet"/>
+        <NamedIndividual IRI="#Nexus3"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Ram"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/co-iot#StaffRoom"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#A101"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#A101"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AirConditioner"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#BlueStar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/co-iot#ConferenceRoom"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#C101"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/co-iot#Laboratory"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#L101"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Laptop"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#MACBookAir"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/co-iot#Classroom"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#N101"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Tablet"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Nexus3"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Smartphone"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Redmi5"/>
+        <NamedIndividual IRI="#Redmi5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/co-iot#Module"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Send_and_Receive"/>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Send_and_Receive"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/co-iot#CourseCode"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#WN624"/>
+        <Class IRI="#CourseCode"/>
+        <NamedIndividual IRI="#WN624"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/co-iot#Router"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#WiFiRouter"/>
+        <Class IRI="#Router"/>
+        <NamedIndividual IRI="#WiFiRouter"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/co-iot#CourseName"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Wireless_Sensor_Network"/>
+        <Class IRI="#CourseName"/>
+        <NamedIndividual IRI="#Wireless_Sensor_Network"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Tablet"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#iPad"/>
+        <NamedIndividual IRI="#iPad"/>
     </ClassAssertion>
     <EquivalentObjectProperties>
         <ObjectProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind"/>
@@ -6922,11 +7130,51 @@
         <ObjectProperty IRI="#startingTime"/>
     </EquivalentObjectProperties>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#attachedSystem"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#inDeployment"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="http://purl.org/iot/vocab/m3-lite#hasSoundSource"/>
         <ObjectProperty IRI="http://purl.org/iot/vocab/m3-lite#hasSource"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Location_Properties"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#associatedEntity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#associatedWith"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -7021,14 +7269,6 @@
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#locatedIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#Location_Properties"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isSubSystemOf"/>
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"/>
@@ -7038,6 +7278,14 @@
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#inDeployment"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#madeObservation"/>
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
     </InverseObjectProperties>
@@ -7045,7 +7293,7 @@
         <ObjectProperty IRI="#startTime"/>
     </SymmetricObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
+        <ObjectProperty IRI="#associatedWith"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasCoverage"/>
@@ -7238,7 +7486,7 @@
         <ObjectProperty IRI="#hasNetworkPublicDomain"/>
     </DisjointObjectProperties>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://www.semanticweb.org/co-iot#Activity_DataProperties"/>
+        <DataProperty IRI="#Activity_DataProperties"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
@@ -7536,9 +7784,30 @@ http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#Deployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">skos:closeMatch &apos;Deployment&apos; [MMI Dev]
+                                 http://marinemetadata.org/community/teams/ontdevices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.oclc.org/NET/ssnx/ssn#Deployment</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes a sensor in terms of its stimulus, sensing method, and the observations it makes.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The ongoing Process of Entities (for the purposes of this ontology, mainly sensors) deployed for a particular purpose.  For example, a particular Sensor deployed on a Platform, or a whole network of Sensors deployed for an observation campaign.  The deployment may have sub processes, such as installation, maintenance, addition, and decomissioning and removal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#Deployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#Deployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#Deployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#Deployment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7644,9 +7913,30 @@ http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#Platform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">skos:exactMatch &apos;platform&apos; [SensorML OGC-0700]
+                                  http://www.opengeospatial.org/standards/sensorml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.oclc.org/NET/ssnx/ssn#Platform</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information about an entity (e.g. device) to which other entities can be mounted</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An Entity to which other Entities can be attached - particuarly Sensors and other Platforms.  For example, a post might act as the Platform, a bouy might act as a Platform, or a fish might act as a Platform for an attached sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#Platform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#Platform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#Platform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#PlatformSite</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:source"/>
@@ -7716,16 +8006,109 @@ http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A device which detects or measures a physical property and records, indicates, or otherwise responds to it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#System</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#System</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">System is a unit of abstraction for pieces of infrastructure (and we largely care that they are) for sensing. A system has components, its subsystems, which are other systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#System</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#System</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#System</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Model#System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.oclc.org/NET/ssnx/ssn#attachedSystem</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
-Relation between a Platform and any Systems (e.g., Sensors) that are attached to the Platform.
-</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation between a Platform and any Systems (e.g., Sensors) that are attached to the Platform.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#attachedSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.oclc.org/NET/ssnx/ssn#attachedSystem</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Attached System</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">attached system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#attachedSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#PlatformSite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation between a deployment and the platform on which the system was deployed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">deployed on platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#Deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deployedSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation between a deployment and the deployed system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deployedSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deployedSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">deployed system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deployedSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#Deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Has part relation between a deployment process and its constituent processes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">deployment process part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#Deployment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7735,9 +8118,29 @@ Relation between a System and a Deployment, recording that the System/Sensor was
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#hasDeployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation between a System and a Deployment, recording that the System/Sensor was deployed in that Deployment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#hasDeployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.oclc.org/NET/ssnx/ssn#hasDeployment</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Has Deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#hasDeployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#hasDeployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#Deployment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7795,7 +8198,12 @@ Relation between a System and a Deployment, recording that the System/Sensor was
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Has Sub System</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has subsystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Model#System</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7808,6 +8216,26 @@ Relation between a System and a Deployment, recording that the System/Sensor was
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.oclc.org/NET/ssnx/ssn#hasValue</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Has Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#inDeployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation between a Platform and a Deployment, recording that the object was used as a platform for a system/sensor for a particular deployment: as in this PhysicalObject is acting as a Platform inDeployment Deployment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#inDeployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#inDeployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">in deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#inDeployment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#Deployment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7882,9 +8310,29 @@ Relation between a System (e.g., a Sensor) and a Platform. The relation locates 
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#onPlatform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation between a System (e.g., a Sensor) and a Platform.  The relation locates the sensor relative to other described entities entities: i.e., the Sensor s1&apos;s location is Platform p1.  More precise locations for sensors in space (relative to other entities, where attached to another entity, or in 3D space) are made using DOLCE&apos;s Regions (SpaceRegion).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#onPlatform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.oclc.org/NET/ssnx/ssn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.oclc.org/NET/ssnx/ssn#onPlatform</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">On Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#onPlatform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">on platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.oclc.org/NET/ssnx/ssn#onPlatform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#PlatformSite</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13597,6 +14045,11 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The part of a computer in which operations are controlled and executed.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Classroom</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Smart classroom domain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#CompEntity</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ComputationalEntity</Literal>
@@ -13610,6 +14063,11 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#CompService</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ComputationalService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DiskDrive</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device which allows a computer to read from and write on to computer disks.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13658,6 +14116,16 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EthernetCable</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A network cable used with wired networks to connect devices such as PCs, routers, and switches within a local area network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EthernetJack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An opening on computer network equipment that Ethernet cables plug into. Their purpose is to connect wired network hardware in an Ethernet LAN, metropolitan area network (MAN), or wide area network (WAN).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Event</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents specific events in an IoT ecosystem.</Literal>
     </AnnotationAssertion>
@@ -13678,8 +14146,23 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImageScanner</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device that optically scans images, printed text, handwriting or an object and converts it to a digital image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InputDevice</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A piece of computer hardware equipment used to provide data and control signals to an information processing system such as a computer or information appliance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Internal</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activities happen in a closed space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Keyboard</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13698,6 +14181,21 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MemoryCard</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An electronic data storage device used for storing digital information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Microphone</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device that converts sound into an electrical signal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mouse</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hand-held pointing device that detects two-dimensional motion relative to a surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Network</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information about communication network.</Literal>
     </AnnotationAssertion>
@@ -13708,6 +14206,11 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NetworkSwitch</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A hardware device that channels incoming data from multiple input ports to a specific output port that will take it toward its intended destination. It transfers data packets between multiple network devices such as computers, routers, servers or other switches.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NetworkingDevice</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An electronic device which is required for communication and interaction between devices on a computer network.</Literal>
     </AnnotationAssertion>
@@ -13715,6 +14218,11 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NonlivingEntity</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines the non-living things in an IoT ecosystem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OutputDevice</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device used to send data from a computer to another device or user.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13768,6 +14276,11 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Router</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A networking device that forwards data packets between computer networks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Smartphone</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A multi-purpose mobile computing device.</Literal>
     </AnnotationAssertion>
@@ -13818,6 +14331,11 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#USBFlashdrive</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data storage device that includes flash memory with an integrated USB interface which is typically removable and rewritable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VehicleProfile</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Profile of Vehicle class</Literal>
     </AnnotationAssertion>
@@ -13825,6 +14343,16 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VirtualEntity</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Defines the virtual things in an IoT ecosystem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Webcam</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Video camera that feeds or streams an image or video in real time to or through a computer to a computer network, such as the Internet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#I/ODevice</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An input/output device is any hardware used by a human operator or other systems to communicate with a computer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14153,86 +14681,6 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#Classroom</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Smart classroom domain</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#DiskDrive</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device which allows a computer to read from and write on to computer disks.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#EthernetCable</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A network cable used with wired networks to connect devices such as PCs, routers, and switches within a local area network.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#EthernetJack</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An opening on computer network equipment that Ethernet cables plug into. Their purpose is to connect wired network hardware in an Ethernet LAN, metropolitan area network (MAN), or wide area network (WAN).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#ImageScanner</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device that optically scans images, printed text, handwriting or an object and converts it to a digital image</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#InputDevice</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A piece of computer hardware equipment used to provide data and control signals to an information processing system such as a computer or information appliance.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#Keyboard</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#MemoryCard</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An electronic data storage device used for storing digital information.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#Microphone</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device that converts sound into an electrical signal.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#Mouse</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hand-held pointing device that detects two-dimensional motion relative to a surface.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#NetworkSwitch</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A hardware device that channels incoming data from multiple input ports to a specific output port that will take it toward its intended destination. It transfers data packets between multiple network devices such as computers, routers, servers or other switches.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#OutputDevice</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device used to send data from a computer to another device or user.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#Router</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A networking device that forwards data packets between computer networks.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#USBFlashdrive</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data storage device that includes flash memory with an integrated USB interface which is typically removable and rewritable.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#Webcam</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Video camera that feeds or streams an image or video in real time to or through a computer to a computer network, such as the Internet.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/co-iot#I/ODevice</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An input/output device is any hardware used by a human operator or other systems to communicate with a computer.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Airport</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Airport</Literal>
     </AnnotationAssertion>
@@ -14440,7 +14888,7 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AnonymousIndividual nodeID="_:genid101"/>
+        <AnonymousIndividual nodeID="_:genid416"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity_Properties</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
