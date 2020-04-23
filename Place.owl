@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/co-iot/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/co-iot/">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#FireStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#RailwayStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Supermarket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Pharmacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PoliceStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#SportsCentre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Leisure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PlaceProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#BusStop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#GasStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#MetroStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Lake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#TollGate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#River"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#BusStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Convenience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PostOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#FastFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#ParkingPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#EducationalInstitute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Bank"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Airport"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Bank"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#BusStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#BusStop"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#BusStation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Convenience"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#EducationalInstitute"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#FastFood"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#FireStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Forest"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#GasStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Hospital"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Lake"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Leisure"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#MetroStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Park"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Leisure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#ParkingPlace"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Pharmacy"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PoliceStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PostOffice"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#RailwayStation"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Restaurant"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#River"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Amenity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#SportsCentre"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Leisure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Station"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Supermarket"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#TollGate"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Infrastructure"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
