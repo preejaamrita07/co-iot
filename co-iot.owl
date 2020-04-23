@@ -14,10 +14,9 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
-    <Prefix name="co-iot" IRI="http://www.semanticweb.org/co-iot#"/>
     <Import>http://www.cenitmio.es/ontologies/Interface.owl</Import>
     <Import>http://www.w3.org/2006/time#2016</Import>
-    <Import>http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Ontology/TTICore-0.03/TTIMapOnto</Import>
+    <Import>http://www.semanticweb.org/co-iot/Place</Import>
     <Import>http://www.cenitmio.es/ontologies/Network.owl</Import>
     <Import>http://www.cenitmio.es/ontologies/Provider.owl</Import>
     <Annotation>
@@ -46,16 +45,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AirPollutantSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Watt"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Active"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Latency"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Watt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Latency"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Pedometer"/>
@@ -70,16 +69,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#HeartBeatSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#SpeedSensor"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MinuteTime"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#TemperatureSensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Microphone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Microphone"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#SpeedSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#TemperatureSensor"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#CommunicationType"/>
@@ -103,7 +102,7 @@
         <Class IRI="#Smog"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#MACBookAir"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#MACBookAir"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Centimetre"/>
@@ -112,10 +111,10 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#GesturalInterface"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Jane"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#OpticalDustSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#OpticalDustSensor"/>
+        <NamedIndividual IRI="#Jane"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FallDetector"/>
@@ -136,19 +135,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SoilHumiditySensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Faculty"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Faculty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#LocationSensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Colleague"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#LocationSensor"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasRelation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Structure"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PowerPlugSocket"/>
@@ -166,10 +165,10 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#BirthStar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#MemoryCard"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#MemoryCard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Laboratory"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Laboratory"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Lumen"/>
@@ -187,7 +186,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ReactivePower"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#HoD"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#HoD"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MotionStateVehicle"/>
@@ -211,7 +210,7 @@
         <NamedIndividual IRI="#ACT-LN-001"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DistanceNextBus"/>
@@ -220,10 +219,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WorkingStateDriver1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#BlueStar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#BlueStar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#AttendanceSheet"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#AttendanceSheet"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ClassProfile"/>
@@ -289,7 +288,7 @@
         <ObjectProperty IRI="#duration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#HumiditySensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#HumiditySensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Inch"/>
@@ -304,10 +303,10 @@
         <Class IRI="#Preference"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Speed"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#HeartBeat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#HeartBeat"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Speed"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Gender"/>
@@ -316,13 +315,13 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Mobile"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Caste"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MedicalHistory"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationCO"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Caste"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPoint"/>
@@ -343,13 +342,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#PresenceStateDriverCard2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Projector"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Projector"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VoiceCommandSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#EthernetJack"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#EthernetJack"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Sound"/>
@@ -364,10 +363,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Millivolt"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Secure"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Redmi5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Redmi5"/>
+        <Class IRI="#Secure"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPosture"/>
@@ -376,7 +375,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricPotential"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Activity_DataProperties"/>
+        <DataProperty IRI="http://www.semanticweb.org/co-iot#Activity_DataProperties"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#BloodGroup"/>
@@ -385,13 +384,13 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#SugarLevel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#HoDRoom"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VOCSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#HoDRoom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#LightSensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#LightSensor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasQuantity"/>
@@ -412,19 +411,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Hour"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasMetadata"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Bar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Bar"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasMetadata"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Visibility"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Brightness"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Capacitance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Capacitance"/>
+        <Class IRI="#Brightness"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Telephone"/>
@@ -442,10 +441,10 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Sibling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Blind"/>
+        <ObjectProperty IRI="#isAssociatedWith"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isAssociatedWith"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Blind"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BoardTemperature"/>
@@ -481,13 +480,13 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#WebInterface"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Document"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DeltaDewPoint"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Mouse"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Mouse"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasUID"/>
@@ -523,7 +522,7 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Animation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#StudentRole"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#StudentRole"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Height"/>
@@ -535,16 +534,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Precipitation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#Strategy"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Kilogram"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Strategy"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Traffic"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SpeedInstantaneous"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Traffic"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CholestrolLevel"/>
@@ -559,13 +558,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Lux"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Light"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Light"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Invalid"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ProximitySensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ProximitySensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TemperatureWasteContainer"/>
@@ -595,7 +594,7 @@
         <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Attribute"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CourseCode"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CourseCode"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TransportDevice"/>
@@ -604,10 +603,10 @@
         <Class IRI="#CPU"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription"/>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <DataProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Degree"/>
@@ -616,7 +615,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RoomTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#PresentationEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#PresentationEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#NetworkService"/>
@@ -640,10 +639,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Camera"/>
+        <DataProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataType"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataType"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Camera"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasState"/>
@@ -670,7 +669,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Crowd"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#StaffRoom"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#StaffRoom"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Energy"/>
@@ -679,7 +678,7 @@
         <Class IRI="#Time"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Headphone"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Headphone"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricFieldSensor"/>
@@ -688,7 +687,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Cupboard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Webplatform"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Webplatform"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SaltMeter"/>
@@ -703,13 +702,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SolarRadiation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#WaterProfile"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DishWasher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Student"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Student"/>
     </Declaration>
     <Declaration>
         <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Kilometre"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentTeamLeader"/>
@@ -718,28 +723,25 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AccRrcConnSetupSuccRate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Kilometre"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Calibration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Range"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#EthernetCable"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#KilometrePerHour"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Range"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#EthernetCable"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#L101"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#L101"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Policy"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Policy"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ThrottleSensor"/>
@@ -766,19 +768,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#CO2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#APP-TS-003"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentColleague"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AccelerationInstantaneous"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentColleague"/>
+        <NamedIndividual IRI="#APP-TS-003"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#ActuatingDevice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#RemotePanel"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#RemotePanel"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ACT-TH-001"/>
@@ -793,10 +795,10 @@
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Precision"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#PPM"/>
+        <Class IRI="#LivingEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LivingEntity"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#PPM"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MedicalEmergencyEvent"/>
@@ -805,31 +807,34 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BuildingTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Glucometer"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Glucometer"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isMobile"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CourseName"/>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PlaceProfile"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ClassEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CourseName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#ClassEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Provider"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#MarkSheet"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#MarkSheet"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DeltaDewPointSensor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Wireless_Sensor_Network"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Wireless_Sensor_Network"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MileageDistanceToService"/>
@@ -865,10 +870,10 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#AudioInterfaceModality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationVOC"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#PresenceStatePeople"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#PresenceStatePeople"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationVOC"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="terms:contributor"/>
@@ -880,10 +885,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Communication"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#WaterO2IonSensor"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#hasMetaData"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#WaterO2IonSensor"/>
+        <Class IRI="#InterfaceProfile"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricCharge"/>
@@ -893,6 +901,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#UID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareProfile"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Hub"/>
@@ -928,28 +939,28 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Conductivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#TechnicalStaff"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#TechnicalStaff"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Sodium"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#NetworkSwitch"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PhysicalFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#NetworkSwitch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutdoorSpace"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OutdoorSpace"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DustSensor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Suspend"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Milliwatt"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Milliwatt"/>
+        <NamedIndividual IRI="#Suspend"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Agriculture"/>
@@ -991,10 +1002,13 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Underwater"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SystemProfile"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Official"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Smoke"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Smoke"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VoiceCommandController"/>
@@ -1027,16 +1041,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#IonisingRadiation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Monitor"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#CountPeopleMoving"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#LuminousIntensity"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Monitor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#PresenceStateDriverCard1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#LuminousIntensity"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WaterLevel"/>
@@ -1054,7 +1068,7 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#CommandLineInterface"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Module"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Module"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VehiclePresenceDetector"/>
@@ -1084,7 +1098,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DistanceSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#IndoorSpace"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Terminate"/>
@@ -1093,22 +1107,22 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#Resolution"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#WiFiRouter"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#WiFiRouter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Keyboard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#GPSSensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Keyboard"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Weather"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#GPSSensor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#HandsonEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#HandsonEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Year"/>
@@ -1121,6 +1135,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationSO2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoilProfile"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Calcium"/>
@@ -1141,10 +1158,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VoiceCommand"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#FillLevel"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationO3"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationO3"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#FillLevel"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FoodTemperature"/>
@@ -1162,19 +1179,19 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Publish/Subscribe"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#AutomaticSensing"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#AutomaticSensing"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Relation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#IntDlThroughputKbps"/>
+        <Class IRI="#CompEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CompEntity"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#IntDlThroughputKbps"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#TextualInterfaceModality"/>
@@ -1216,10 +1233,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DirectionOfArrival"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#AmbientLight"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#WiFiInterfaceEnergyMeter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#WiFiInterfaceEnergyMeter"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#AmbientLight"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ENT-TYP-ID"/>
@@ -1258,13 +1275,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#HDOP"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Location_Properties"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#Location_Properties"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricField1800MHz"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Nexus3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Nexus3"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SpeedMedian"/>
@@ -1273,10 +1290,10 @@
         <AnnotationProperty abbreviatedIRI="dc:source"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#RetERabDrop"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#MilligramPerCubicMetre"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#MilligramPerCubicMetre"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#RetERabDrop"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
@@ -1285,46 +1302,49 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FrequencySensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#RoadTemperature"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Frequency"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#SmartHome"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#RoadTemperature"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Millimetre"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#NFC"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#SmartHome"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Religion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#RadianPerSecond"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#NFC"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Simulation"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#RadianPerSecond"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SiemensPerMetre"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#Simulation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Candela"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#MilligramPerSquareMetre"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#MinuteAngle"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasParkingLot"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#MinuteAngle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#MilligramPerSquareMetre"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Magnetometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirProfile"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VehiclesPerMinute"/>
@@ -1342,7 +1362,7 @@
         <Class IRI="#Laptop"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#iPad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#iPad"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Mass"/>
@@ -1354,7 +1374,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WeightSensor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Send_and_Receive"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Send_and_Receive"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AccS1SigEstabSuccRate"/>
@@ -1381,10 +1401,10 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#VisualInterfaceModality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Pascal"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#TimeRelatedStateDriver1"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#TimeRelatedStateDriver1"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Pascal"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Polygon"/>
@@ -1396,10 +1416,10 @@
         <Class IRI="#Tablet"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#QRCode"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Bus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Bus"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#QRCode"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BoardThermometer"/>
@@ -1408,16 +1428,16 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Father"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CourseMaterial"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#TimeRelatedStateDriver2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#TimeRelatedStateDriver2"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CourseMaterial"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Profile"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#FireEmergencyEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#FireEmergencyEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#GraphicInterface"/>
@@ -1438,16 +1458,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TouchSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Place"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Humidity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CO2Sensor"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentJoiningDate"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CO2Sensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Mineral"/>
@@ -1456,16 +1473,22 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Graduation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentJoiningDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/sensor#Engine"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WindSpeed"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasReference"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#InputDevice"/>
+        <Class IRI="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationOutput"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#OperationOutput"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WindSpeedSensor"/>
@@ -1504,19 +1527,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RotationalSpeedEngine"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Experiment"/>
+        <Class IRI="#VirtualEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#LastName"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#VirtualEntity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#MicrogramPerCubicMetre"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Experiment"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Step"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#MicrogramPerCubicMetre"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MileageTotal"/>
@@ -1540,10 +1563,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WaterConductivitySensor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#WN624"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#WN624"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Gyroscope"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Gyroscope"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Radian"/>
@@ -1561,13 +1584,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SoundPressureLevelAmbient"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OccupancySensor"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#LoRaInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#OccupancySensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#NO2Sensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#LoRaInterface"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AirThermometer"/>
@@ -1576,16 +1599,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RSSI"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Assignment"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CommunicationService"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ImageScanner"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Assignment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ExamEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ImageScanner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
@@ -1594,10 +1617,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#CloudCoverSensor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasEthernetjack"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#WindDirectionSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#WindDirectionSensor"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasEthernetjack"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#PH"/>
@@ -1606,7 +1629,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Tesla"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ConferenceRoom"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ConferenceRoom"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Ohm"/>
@@ -1615,7 +1638,7 @@
         <NamedIndividual IRI="#EVT-CL-001"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#I/ODevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Culture"/>
@@ -1627,16 +1650,19 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Measurement"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ProviderProfile"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Seismometer"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Proximity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ComputerSpeaker"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Spouse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Spouse"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ComputerSpeaker"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WindDirection"/>
@@ -1654,7 +1680,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MobHoPrepSuccRate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#DemoEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#DemoEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Neighbor"/>
@@ -1663,10 +1689,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Distance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#REL-TYP-ID"/>
+        <Class IRI="#NaturalResource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NaturalResource"/>
+        <Class IRI="#REL-TYP-ID"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#madeObservation"/>
@@ -1675,7 +1701,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#AtmosphericPressure"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Faculty"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Faculty"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FuelConsumptionInstantaneous"/>
@@ -1687,10 +1713,10 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#WeddingPlace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Microvolt"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#DiskDrive"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#DiskDrive"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Microvolt"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VehicleOverspeedState"/>
@@ -1717,13 +1743,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MillimetrePerHour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#MethaneSensor"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#PresenceStateDriverCard"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#N101"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#MethaneSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#N101"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#EmailID"/>
@@ -1738,22 +1764,22 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#BloodPressure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Parent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Parent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Location"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Powerpoint"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Powerpoint"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Count"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Name"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#FireDetector"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#FireDetector"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Name"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Window"/>
@@ -1816,7 +1842,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ConstructionWork"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#LearningEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#LearningEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#WeddingDate"/>
@@ -1855,16 +1881,16 @@
         <Class IRI="#Goal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Coordinates"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Salinity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#DecibelA"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Coordinates"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#associatedSubgoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#DecibelA"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Transportation"/>
@@ -1873,13 +1899,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNO2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#KiloWattHour"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#startingTime"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#KiloWattHour"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#LocationQK"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServiceProfile"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Active"/>
@@ -1888,16 +1917,16 @@
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishes"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Printer"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Printer"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ABS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#AlarmSystem"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Irrigation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Irrigation"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#AlarmSystem"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TransportProfile"/>
@@ -1942,7 +1971,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#VisibilitySensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#QuestionPaper"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#QuestionPaper"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#GramPerCubicMetre"/>
@@ -1955,6 +1984,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#DisseminationService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MineralProfile"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TV"/>
@@ -1975,7 +2007,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SoilThermometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#SimulationEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#SimulationEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FillLevelWasteContainer"/>
@@ -1999,7 +2031,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BodyTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#LectureDeliveryEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#LectureDeliveryEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Network"/>
@@ -2008,10 +2040,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SoilTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Audio"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Audio"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Humidity"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Humidity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PlantProfile"/>
@@ -2020,10 +2052,10 @@
         <Class IRI="#Television"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Miles"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#KilogramPerCubicMetre"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#KilogramPerCubicMetre"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Miles"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RoadSurfaceThermometer"/>
@@ -2071,10 +2103,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BloodPressureSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#StayingPeopleCountSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#StayingPeopleCountSensor"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#GyrometerSensor"/>
@@ -2083,13 +2115,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#FuelConsumption"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Questionnaire"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Questionnaire"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ClassEvent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Role"/>
@@ -2110,13 +2142,13 @@
         <ObjectProperty IRI="#hasColleague"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Classroom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentWaterConcentrationNO3Ion"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Classroom"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#ConnectionInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#ChemicalAgentWaterConcentrationNO3Ion"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ConductivitySensor"/>
@@ -2179,16 +2211,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TimeOfArrivalSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#BloodPressure"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Computer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Computer"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#BloodPressure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EventProfile"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#SoftwareTool"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#SoftwareTool"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DoorStateSensor"/>
@@ -2206,10 +2238,10 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricCurrent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Circle"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentJob"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentJob"/>
+        <Class IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Circle"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#COSensor"/>
@@ -2221,6 +2253,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#LeafWetness"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Heating"/>
     </Declaration>
     <Declaration>
@@ -2230,19 +2265,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Voltage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#External"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#CountEmptyDockingPoints"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#CountEmptyDockingPoints"/>
+        <Class IRI="#External"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Social"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#associatedEntity"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#SoilMoistureTension"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#SoilMoistureTension"/>
+        <ObjectProperty IRI="#associatedEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Software"/>
@@ -2254,16 +2289,16 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#CountAvailableBicycles"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#WorkingState"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ESP"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#CO2Sensor"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#WorkingState"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#ResAverageLicConnectedUsers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#CO2Sensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Others"/>
@@ -2278,16 +2313,16 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#WashingMachine"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Rainfall"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#LightSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#LightSensor"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Rainfall"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Medical"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Vehicle"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Vehicle"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Healthcare"/>
@@ -2308,10 +2343,10 @@
         <ObjectProperty IRI="#hasEngine"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Microgram"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#AirQuality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#AirQuality"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Microgram"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TimeOfArrival"/>
@@ -2341,19 +2376,22 @@
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#C101"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricField900Mhz"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#C101"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Citizenship"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#ElectricField900Mhz"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BodyThermometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Webpage"/>
+        <Class IRI="#DeploymentProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#Webpage"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Direction"/>
@@ -2377,16 +2415,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Ampere"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Millilitre"/>
+        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#VehicleType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isSubSystemOf"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Millilitre"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ElectricSwitchboard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Video"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Video"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
@@ -2407,6 +2448,9 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RoadOccupancy"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DeviceProfile"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CompService"/>
     </Declaration>
     <Declaration>
@@ -2419,7 +2463,7 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#AccessNetworkInterface"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ParentRole"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ParentRole"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Decibel"/>
@@ -2431,7 +2475,7 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#NH3Sensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#USBFlashdrive"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#USBFlashdrive"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SmartEnergy"/>
@@ -2449,16 +2493,19 @@
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#NaturalLanguageInterface"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#EnvironmentProfile"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NetworkingDevice"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#RFID"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#associatedWith"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#WeatherLuminosity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#WeatherLuminosity"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#SoftwareService"/>
@@ -2473,16 +2520,16 @@
         <Class IRI="http://purl.org/NET/ssnx/qu/qu#QuantityKind"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NonlivingEntity"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#TimeRelatedState"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Webcam"/>
+        <Class IRI="#NonlivingEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Others"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/co-iot#Webcam"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MmolPerLitre"/>
@@ -2506,19 +2553,19 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Frequency"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Resolution"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#LoRaInterfaceEnergyMeter"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#DeathPlace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Resolution"/>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#IntDlLatency"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#Thermometer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#IntDlLatency"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#MicrowattPerSquareCentimetre"/>
@@ -2530,13 +2577,13 @@
         <Class IRI="http://purl.org/iot/vocab/m3-lite#WaterTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Router"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#DewPoint"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Router"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#DewPointTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#DewPoint"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#BuildingAutomation"/>
@@ -2554,7 +2601,7 @@
         <Class IRI="#MedicalEmergencyProfile"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Course"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.cenitmio.es/ontologies/Interface.owl#GraphicInterfaceModality"/>
@@ -2581,10 +2628,13 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#PulseRate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/iot/vocab/m3-lite#Hertz"/>
+        <Class IRI="#PlatformProfile"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#H2SSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/iot/vocab/m3-lite#Hertz"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/iot/vocab/m3-lite#SeatBeltTensionSensor"/>
@@ -2596,16 +2646,10 @@
         <Class IRI="#Animal"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#A101"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Subgoal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#VehicleType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/sensor#Engine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#A101"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
@@ -2620,7 +2664,7 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#CurrentColleague"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Structure"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building"/>
     </EquivalentClasses>
     <SubClassOf>
@@ -5475,7 +5519,7 @@
     <SubClassOf>
         <Class IRI="#Activity"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#associatedWith"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
             <Class IRI="#Entity"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -5493,6 +5537,10 @@
     <SubClassOf>
         <Class IRI="#AirConditioner"/>
         <Class IRI="#ElecronicDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirProfile"/>
+        <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Animal"/>
@@ -5533,6 +5581,14 @@
     <SubClassOf>
         <Class IRI="#Culture"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#PersonProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeploymentProfile"/>
+        <Class IRI="#EntityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeviceProfile"/>
+        <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ENT-TYP-ID"/>
@@ -5592,6 +5648,10 @@
         <Class IRI="#NonlivingEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EnvironmentProfile"/>
+        <Class IRI="#EntityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Event"/>
         <ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
@@ -5623,7 +5683,7 @@
     <SubClassOf>
         <Class IRI="#Event"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#associatedWith"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
             <Class IRI="#Activity"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -5645,6 +5705,10 @@
     <SubClassOf>
         <Class IRI="#Interface"/>
         <Class IRI="#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InterfaceProfile"/>
+        <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Internal"/>
@@ -5669,6 +5733,10 @@
     <SubClassOf>
         <Class IRI="#Mineral"/>
         <Class IRI="#NaturalResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MineralProfile"/>
+        <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NaturalResource"/>
@@ -5725,11 +5793,19 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#PersonProfile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Place"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Plant"/>
         <Class IRI="#LivingEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PlantProfile"/>
+        <Class IRI="#EntityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlatformProfile"/>
         <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
@@ -5747,6 +5823,10 @@
     <SubClassOf>
         <Class IRI="#Provider"/>
         <Class IRI="#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProviderProfile"/>
+        <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#REL-TYP-ID"/>
@@ -5769,6 +5849,10 @@
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ServiceProfile"/>
+        <Class IRI="#EntityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Smartphone"/>
         <Class IRI="#ElecronicDevice"/>
     </SubClassOf>
@@ -5781,8 +5865,16 @@
         <Class IRI="#CompEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SoftwareProfile"/>
+        <Class IRI="#EntityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Soil"/>
         <Class IRI="#NaturalResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoilProfile"/>
+        <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#State"/>
@@ -5798,6 +5890,10 @@
     <SubClassOf>
         <Class IRI="#Suspend"/>
         <Class IRI="#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemProfile"/>
+        <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tablet"/>
@@ -5826,6 +5922,10 @@
     <SubClassOf>
         <Class IRI="#VirtualEntity"/>
         <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterProfile"/>
+        <Class IRI="#EntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Weather"/>
@@ -6183,7 +6283,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#VehicleType"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Vehicle"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#WashingMachine"/>
@@ -6210,335 +6310,324 @@
         <Class IRI="http://www.onem2m.org/ontology/Base_Ontology/base_ontology#Service"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#AmbientLight"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#AmbientLight"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Assignment"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Document"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Assignment"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#AttendanceSheet"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Document"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#AttendanceSheet"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Audio"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Audio"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CO2Sensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CO2Sensor"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Camera"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Camera"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ClassEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ClassEvent"/>
         <Class IRI="#ClassProfile"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Classroom"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/9/12/co-iot#Place"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Classroom"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ComputerSpeaker"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ComputerSpeaker"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ConferenceRoom"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/9/12/co-iot#Place"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ConferenceRoom"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Course"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Document"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CourseCode"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Course"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CourseCode"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CourseMaterial"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Document"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CourseMaterial"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CourseName"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Course"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CourseName"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#DemoEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#DemoEvent"/>
         <Class IRI="#ClassProfile"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#DiskDrive"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#I/ODevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#DiskDrive"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Document"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
         <Class IRI="#VirtualEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#EthernetCable"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#EthernetCable"/>
         <Class IRI="#NetworkingDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#EthernetJack"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#EthernetJack"/>
         <Class IRI="#NetworkingDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ExamEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
         <Class IRI="#ClassProfile"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Faculty"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Faculty"/>
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#FireDetector"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#FireDetector"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#FireEmergencyEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#FireEmergencyEvent"/>
         <Class IRI="#MedicalEmergencyProfile"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Gyroscope"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Gyroscope"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#HandsonEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#HandsonEvent"/>
         <Class IRI="#ClassProfile"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Headphone"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Headphone"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#HoD"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#HoD"/>
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#HoDRoom"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#IndoorSpace"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#HoDRoom"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Humidity"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Humidity"/>
         <Class IRI="#Environment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#HumiditySensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#HumiditySensor"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ImageScanner"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#InputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ImageScanner"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#IndoorSpace"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Structure"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#InputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
         <Class IRI="#PeripheralDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Keyboard"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#InputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Keyboard"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Laboratory"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/9/12/co-iot#Place"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Laboratory"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#LearningEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#LearningEvent"/>
         <Class IRI="#ClassProfile"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#LectureDeliveryEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#LectureDeliveryEvent"/>
         <Class IRI="#ClassProfile"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Light"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Light"/>
         <Class IRI="#Environment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#LightSensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#LightSensor"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#LocationSensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#LocationSensor"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#MarkSheet"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Document"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#MarkSheet"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#MemoryCard"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#I/ODevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#MemoryCard"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Microphone"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#InputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Microphone"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Module"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Course"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Module"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Course"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Monitor"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Monitor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Mouse"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#InputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Mouse"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#NetworkSwitch"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#NetworkSwitch"/>
         <Class IRI="#NetworkingDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OccupancySensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OccupancySensor"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutdoorSpace"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Structure"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OutdoorSpace"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
         <Class IRI="#PeripheralDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Parent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Parent"/>
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ParentRole"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ParentRole"/>
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Policy"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Policy"/>
         <Class IRI="#VirtualEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Powerpoint"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Powerpoint"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#PresentationEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#PresentationEvent"/>
         <Class IRI="#ClassProfile"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Printer"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Printer"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Projector"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Projector"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#OutputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ProximitySensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ProximitySensor"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#QuestionPaper"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Document"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#QuestionPaper"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Questionnaire"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Document"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Questionnaire"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#RemotePanel"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#RemotePanel"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Router"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Router"/>
         <Class IRI="#NetworkingDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Simulation"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Simulation"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#SimulationEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#SimulationEvent"/>
         <Class IRI="#ClassProfile"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Smoke"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Smoke"/>
         <Class IRI="#Environment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#SoftwareTool"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#SoftwareTool"/>
         <Class IRI="#Software"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#StaffRoom"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#IndoorSpace"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#StaffRoom"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Strategy"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Policy"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Strategy"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Policy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Structure"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
         <Class IRI="#NonlivingEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Student"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Student"/>
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#StudentRole"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#StudentRole"/>
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#TechnicalStaff"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#TechnicalStaff"/>
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#TemperatureSensor"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#TemperatureSensor"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#USBFlashdrive"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#I/ODevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#USBFlashdrive"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Vehicle"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Vehicle"/>
         <Class IRI="#TransportDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Video"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Video"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Webcam"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#InputDevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Webcam"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#InputDevice"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Webpage"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Webpage"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Webplatform"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Webplatform"/>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MultimediaService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#I/ODevice"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#I/ODevice"/>
         <Class IRI="#PeripheralDevice"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/9/12/co-iot#Place"/>
-        <Class IRI="#Location"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/9/12/co-iot#Place"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#hasProfile"/>
-            <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PlaceProfile"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#PlaceProfile"/>
@@ -6546,7 +6635,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/sensor#Engine"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Vehicle"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
@@ -6602,9 +6691,9 @@
         <Class IRI="#Brightness"/>
         <Class IRI="#NoiseLevel"/>
         <Class IRI="#Smog"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Humidity"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Light"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Smoke"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Humidity"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Light"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Smoke"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#ACT-TYP-ID"/>
@@ -6623,12 +6712,12 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Animation"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#RemotePanel"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Simulation"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#RemotePanel"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Simulation"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#Animation"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Simulation"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Simulation"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#FirstName"/>
@@ -6636,33 +6725,33 @@
         <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/co-iot#MiddleName"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Assignment"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#AttendanceSheet"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CourseMaterial"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#MarkSheet"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#QuestionPaper"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Questionnaire"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Assignment"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#AttendanceSheet"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CourseMaterial"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#MarkSheet"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#QuestionPaper"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Questionnaire"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#DemoEvent"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ExamEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#DemoEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#DiskDrive"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#MemoryCard"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#USBFlashdrive"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#DiskDrive"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#MemoryCard"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#USBFlashdrive"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ExamEvent"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#LectureDeliveryEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#LectureDeliveryEvent"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ExamEvent"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#PresentationEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#PresentationEvent"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ExamEvent"/>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#SimulationEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ExamEvent"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#SimulationEvent"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#ACT-TYP-ID"/>
@@ -6753,60 +6842,60 @@
         <NamedIndividual IRI="#Ram"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#StaffRoom"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#A101"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#StaffRoom"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#A101"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Structure"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#A101"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Structure"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#A101"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AirConditioner"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#BlueStar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#BlueStar"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ConferenceRoom"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#C101"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#ConferenceRoom"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#C101"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Laboratory"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#L101"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Laboratory"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#L101"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Laptop"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#MACBookAir"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#MACBookAir"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Classroom"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#N101"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Classroom"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#N101"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Tablet"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Nexus3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Nexus3"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Smartphone"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Redmi5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Redmi5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Module"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Send_and_Receive"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Module"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Send_and_Receive"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CourseCode"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#WN624"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CourseCode"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#WN624"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Router"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#WiFiRouter"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#Router"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#WiFiRouter"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#CourseName"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Wireless_Sensor_Network"/>
+        <Class IRI="http://www.semanticweb.org/co-iot#CourseName"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#Wireless_Sensor_Network"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Tablet"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#iPad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/co-iot#iPad"/>
     </ClassAssertion>
     <EquivalentObjectProperties>
         <ObjectProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind"/>
@@ -6933,11 +7022,11 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Location_Properties"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#Location_Properties"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#associatedWith"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
@@ -6956,7 +7045,7 @@
         <ObjectProperty IRI="#startTime"/>
     </SymmetricObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#associatedWith"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/co-iot#associatedWith"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasCoverage"/>
@@ -7149,7 +7238,7 @@
         <ObjectProperty IRI="#hasNetworkPublicDomain"/>
     </DisjointObjectProperties>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Activity_DataProperties"/>
+        <DataProperty IRI="http://www.semanticweb.org/co-iot#Activity_DataProperties"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
@@ -14064,82 +14153,82 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Classroom</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#Classroom</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Smart classroom domain</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#DiskDrive</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#DiskDrive</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device which allows a computer to read from and write on to computer disks.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#EthernetCable</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#EthernetCable</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A network cable used with wired networks to connect devices such as PCs, routers, and switches within a local area network.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#EthernetJack</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#EthernetJack</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An opening on computer network equipment that Ethernet cables plug into. Their purpose is to connect wired network hardware in an Ethernet LAN, metropolitan area network (MAN), or wide area network (WAN).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#ImageScanner</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#ImageScanner</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device that optically scans images, printed text, handwriting or an object and converts it to a digital image</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#InputDevice</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#InputDevice</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A piece of computer hardware equipment used to provide data and control signals to an information processing system such as a computer or information appliance.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Keyboard</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#Keyboard</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#MemoryCard</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#MemoryCard</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An electronic data storage device used for storing digital information.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Microphone</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#Microphone</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device that converts sound into an electrical signal.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Mouse</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#Mouse</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hand-held pointing device that detects two-dimensional motion relative to a surface.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#NetworkSwitch</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#NetworkSwitch</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A hardware device that channels incoming data from multiple input ports to a specific output port that will take it toward its intended destination. It transfers data packets between multiple network devices such as computers, routers, servers or other switches.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#OutputDevice</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#OutputDevice</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Device used to send data from a computer to another device or user.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Router</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#Router</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A networking device that forwards data packets between computer networks.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#USBFlashdrive</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#USBFlashdrive</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data storage device that includes flash memory with an integrated USB interface which is typically removable and rewritable.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#Webcam</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#Webcam</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Video camera that feeds or streams an image or video in real time to or through a computer to a computer network, such as the Internet.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/preeja/ontologies/2018/2/12/intelligentclassroom#I/ODevice</IRI>
+        <IRI>http://www.semanticweb.org/co-iot#I/ODevice</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An input/output device is any hardware used by a human operator or other systems to communicate with a computer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -14156,11 +14245,6 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Bank</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bank</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Building</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Building structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14356,7 +14440,7 @@ A Service (Class: Service) is a electronic representation of a Functionality in 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AnonymousIndividual nodeID="_:genid659"/>
+        <AnonymousIndividual nodeID="_:genid101"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity_Properties</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
